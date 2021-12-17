@@ -47,12 +47,15 @@
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="15C-p5-v40"/>
+                                    <constraint firstAttribute="height" constant="50" id="TyX-WI-PRy"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
-                                </buttonConfiguration>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="startButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dfd-6M-oaV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +70,12 @@
                             <constraint firstItem="I7z-x9-zYR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.200893" id="w8u-YA-Smr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="QRU-0p-SuA" id="tEb-nD-GYO"/>
+                        <outlet property="redLightView" destination="4D3-1l-xNZ" id="qnn-kG-fDJ"/>
+                        <outlet property="startButton" destination="HzL-zs-E5J" id="BVx-PI-bEF"/>
+                        <outlet property="yellowLightView" destination="I7z-x9-zYR" id="AZD-54-DpR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
